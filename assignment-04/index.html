@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example Page</title>
+  </head>
+  <body>
+    <h1>Example List</h1>
+    <ul id="example-list">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+    <button onclick="addNewListItem()">Add New List Item</button>
+    <script src="index.js"></script>
+  </body>
+</html>
+
+<!-- 2 nd virsion with stayle  -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example Page</title>
+    <style>
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      li:last-child {
+        border-bottom: none;
+      }
+
+      button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px;
+        margin: 10px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Example List</h1>
+    <ul id="example-list">
+      <li>Item 1 <button>Delete</button></li>
+      <li>Item 2 <button>Delete</button></li>
+      <li>Item 3 <button>Delete</button></li>
+    </ul>
+    <button onclick="addNewListItem()">Add New List Item</button>
+    <button onclick="deleteListItem()">Delete Last List Item</button>
+    <script src="index.js"></script>
+  </body>
+</html>
